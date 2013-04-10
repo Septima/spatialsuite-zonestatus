@@ -67,8 +67,6 @@ Eksempel:
 
 komnr=183
 
-#Data variable, der indsættes i landzone
-
 dataprod='April' # dato for oprettelse af landzonepolygon
 
 kommunenavn='Ishøj'
