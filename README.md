@@ -47,7 +47,7 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
 
 Eksempel:
 
-
+```xml
      <targetset name="std_soegning" maxresult="500" >
         <include src="[module:zonestatus.dir]/queries/targetset.xml" nodes="/spatialqueries/targetset/*" mustexist="false"/>
         <target displayname="Skoler"
@@ -56,7 +56,7 @@ Eksempel:
             <datasource name="ds_skoler" />
         </target>
     </targetset>
-
+```xml
 
 4: Hent data
 
