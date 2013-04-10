@@ -9,7 +9,16 @@ Dette modul er finansieret af Ishøj Kommune og er kan anvendes kvit og frit af 
 
 #Beskrivelse:
 
-Modulet til SpatialSuite beregner manglende zonetatus for landzone
+
+Plansystem udstiller ikke data om landzoner medmindre en plan specifikt er udlagt til landzone. Derfor antages det at alle arealer, der ikke er registreret med en zoneplan i Plansystem, kan betragtes som landzone.
+
+Dette modul til SpatialSuite beregner manglende zonetatus for landzone ved først at hente kommunegrænsen. Samtidig hentes alle eksisterende zoner i kommunen og alle polygonerne lægges sammen(union).
+
+Endelig fratrækkes de sammelagte zonerarealer fra kommunens amlede areal.
+
+Note: Der er registreret præcisionsforskelle mellem zonearealer og kommunegrænsen, hvilket medfører en randzoneproblematik ved "klipningen". Polygonen for den beregnede landszone er defor beregnet ved at påføre en negativ buffer på 0,0,5 meter på kommunepolygonen. Derfor har den beregnede landszone en marginal usikkerhed i kanterne på 0,05 meter
+
+
 
 
 #Afhængigheder:
@@ -81,4 +90,4 @@ dataprod='April' # dato for oprettelse af landzonepolygon
 kommunenavn='Ishøj'
 zonestatus='Beregnet landzone' # Teksten i feltet zonestatus
 ```
-
+4.b: Åben en kommandolinjeprompt i modulets datafolder og kør scriptet.
