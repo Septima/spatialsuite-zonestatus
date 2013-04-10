@@ -1,5 +1,11 @@
-spatialsuite-zonestatus
+Spatialsuite-zonestatus
 =======================
+
+
+# Licens
+
+Dette modul er finansieret af Ishøj Kommune og er kan anvendes kvit og frit af uden betingelser
+
 
 #Beskrivelse:
 
