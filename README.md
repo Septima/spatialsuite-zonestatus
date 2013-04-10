@@ -30,7 +30,7 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
 
 2.a: I profilen indsættes:
 
-
+'''xml
     <theme module="zonestatus" name="theme-zonekort-landzone">
         <themeselector>
             <initialstate>available</initialstate>
@@ -39,7 +39,7 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
             <selectable>true</selectable>
         </themeselector>
     </theme>
-
+'''
 
 3: Tilføj targetset
 
