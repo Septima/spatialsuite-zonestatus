@@ -42,8 +42,9 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
 3: Tilføj targetset
 
 3.a: I profilens targetset fil tilføjes følgende include:
-
+```xml
     <include src="[module:zonestatus.dir]/queries/targetset.xml" nodes="/spatialqueries/targetset/*" mustexist="false"/>
+```
 
 Eksempel:
 
