@@ -18,7 +18,7 @@ Endelig fratrækkes de sammelagte zonerarealer fra kommunens amlede areal.
 
 Note: Der er registreret præcisionsforskelle mellem zonearealer og kommunegrænsen, hvilket medfører en randzoneproblematik ved "klipningen". Polygonen for den beregnede landszone er defor beregnet ved at påføre en negativ buffer på 0,0,5 meter på kommunepolygonen. Derfor har den beregnede landszone en marginal usikkerhed i kanterne på 0,05 meter
 
-
+Modulet konstruerer således en ESRI Shapefile med alle zonearealer inklusive beregnede landzonearealer. Andre formater kan meget enkelt understøttes herunder spatialle databaser
 
 
 #Afhængigheder:
