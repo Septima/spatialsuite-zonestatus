@@ -90,4 +90,4 @@ dataprod='April' # dato for oprettelse af landzonepolygon
 kommunenavn='Ishøj'
 zonestatus='Beregnet landzone' # Teksten i feltet zonestatus
 ```
-4.b: Åben en kommandolinjeprompt i modulets datafolder og kør scriptet.
+4.b: Åben en kommandolinjeprompt i modulets datafolder og kør scriptet. Modulet har herefter en ESRI SHapefil med alle zonearealer inklusive beregnede landzonearealer.
