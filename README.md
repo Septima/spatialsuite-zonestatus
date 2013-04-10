@@ -33,9 +33,9 @@ Note: Seneste version af modulet kan altid hentes med ovenstående link
 1.b: Kopier modulet "zonestatus" til sitets Septima moduler, dvs. til "[cbinfo.config.dir]/modules/septima/zonestatus"
 
 1.c: Skriv følgende entry i [cbinfo.modules]:
-'''xml
+```xml
 <module name="zonestatus" dir="septima/zonestatus"/>
-'''
+```
 2: Tilføj tema
 
 2.a: I profilen indsættes:
