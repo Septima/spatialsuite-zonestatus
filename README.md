@@ -52,7 +52,10 @@ Eksempel:
 4.a: I modulets "data folder" tilrettes createdata.bat  med følgende variable:
 
 komnr=183
-## Data variable, der indsættes i landzone
+
+Data variable, der indsættes i landzone
 dataprod='April' # dato for oprettelse af landzonepolygon
+
 kommunenavn='Ishøj'
+
 zonestatus='Beregnet landzone' # Teksten i zonestatus
