@@ -1,16 +1,16 @@
 spatialsuite-zonestatus
 =======================
 
-Beskrivelse:
+#Beskrivelse:
 
 Modulet til SpatialSuite beregner manglende zonetatus for landzone
 
 
-Afhængigheder:
+#Afhængigheder:
 
 Kræver ogr2ogr version 1.9.1 bygget med spatialite
 
-INSTALLATION :
+#INSTALLATION :
 
 1:   Installér modulet
 1.a: Kopier modulet "zonestatus" til sitets Septima moduler, dvs. til "[cbinfo.config.dir]/modules/septima/zonestatus"
@@ -53,7 +53,8 @@ Eksempel:
 
 komnr=183
 
-Data variable, der indsættes i landzone
+#Data variable, der indsættes i landzone
+
 dataprod='April' # dato for oprettelse af landzonepolygon
 
 kommunenavn='Ishøj'
