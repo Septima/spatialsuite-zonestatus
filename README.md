@@ -58,6 +58,7 @@ Eksempel:
     </targetset>
 ```xml
 
+
 4: Hent data
 
 4.a: I modulets "data folder" tilrettes createdata.bat  med følgende variable:
