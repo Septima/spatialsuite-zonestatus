@@ -19,12 +19,16 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
 #INSTALLATION :
 
 1:   Installér modulet
+
 1.a: Kopier modulet "zonestatus" til sitets Septima moduler, dvs. til "[cbinfo.config.dir]/modules/septima/zonestatus"
+
 1.b: Skriv følgende entry i [cbinfo.modules]: <module name="zonestatus" dir="septima/zonestatus"/>
 
 2: Tilføj tema
+
 2.a: I profilen indsættes:
-'''xml
+
+
     <theme module="zonestatus" name="theme-zonekort-landzone">
         <themeselector>
             <initialstate>available</initialstate>
@@ -34,7 +38,9 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
         </themeselector>
     </theme>
 
+
 3: Tilføj targetset
+
 3.a: I profilens targetset fil tilføjes følgende include:
 
     <include src="[module:zonestatus.dir]/queries/targetset.xml" nodes="/spatialqueries/targetset/*" mustexist="false"/>
@@ -53,6 +59,7 @@ Eksempel:
 
 
 4: Hent data
+
 4.a: I modulets "data folder" tilrettes createdata.bat  med følgende variable:
 
 komnr=183
