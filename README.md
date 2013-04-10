@@ -56,7 +56,7 @@ Eksempel:
             <datasource name="ds_skoler" />
         </target>
     </targetset>
-```xml
+```
 
 
 4: Hent data
