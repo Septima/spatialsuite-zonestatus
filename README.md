@@ -22,8 +22,10 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
 
 1.a: Kopier modulet "zonestatus" til sitets Septima moduler, dvs. til "[cbinfo.config.dir]/modules/septima/zonestatus"
 
-1.b: Skriv følgende entry i [cbinfo.modules]: <module name="zonestatus" dir="septima/zonestatus"/>
-
+1.b: Skriv følgende entry i [cbinfo.modules]:
+'''xml
+<module name="zonestatus" dir="septima/zonestatus"/>
+'''
 2: Tilføj tema
 
 2.a: I profilen indsættes:
