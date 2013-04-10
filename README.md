@@ -10,13 +10,15 @@ Dette modul er finansieret af Ishøj Kommune og er kan anvendes kvit og frit af 
 #Beskrivelse:
 
 
-Plansystem udstiller ikke data om landzoner medmindre en plan specifikt er udlagt til landzone. Derfor antages det at alle arealer, der ikke er registreret med en zoneplan i Plansystem, kan betragtes som landzone.
+Plansystem udstiller ikke data om landzoner medmindre en zone specifikt er udlagt til landzone. Det antages i modulet at alle arealer, der ikke er registreret med en zoneplan i Plansystem, er landzoner.
 
-Dette modul til SpatialSuite beregner manglende zonetatus for landzone ved først at hente kommunegrænsen. Samtidig hentes alle eksisterende zoner i kommunen og alle polygonerne lægges sammen(union).
+Dette modul til SpatialSuite beregner det ikke-zonelagte areal og angiver det som landszone zone.
 
-Endelig fratrækkes de sammelagte zonerarealer fra kommunens amlede areal.
+Først hentes kommunegrænsen fra plansystem. Samtidig hentes alle eksisterende zoner i kommunen og alle zone-polygonerne lægges sammen(union).
 
-Note: Der er registreret præcisionsforskelle mellem zonearealer og kommunegrænsen, hvilket medfører en randzoneproblematik ved "klipningen". Polygonen for den beregnede landszone er defor beregnet ved at påføre en negativ buffer på 0,0,5 meter på kommunepolygonen. Derfor har den beregnede landszone en marginal usikkerhed i kanterne på 0,05 meter
+Endelig fratrækkes(difference) de sammelagte zonerarealer fra kommunensgrænsen (polygon).
+
+Note: Der er registreret præcisionsforskelle mellem geometrierne fra zonearealer og kommunegrænsen, hvilket medfører en randzoneproblematik ved "klipningen". Polygonen for den beregnede landszone er defor beregnet ved at påføre en negativ buffer på 0,05 meter på kommunepolygonen. Derfor har den beregnede landszone en marginal usikkerhed i kanterne som grænser op til kommunegrænsen på 0,05 meter
 
 Modulet konstruerer således en ESRI Shapefile med alle zonearealer inklusive beregnede landzonearealer. Andre formater kan meget enkelt understøttes herunder spatialle databaser
 
@@ -25,7 +27,7 @@ Modulet konstruerer således en ESRI Shapefile med alle zonearealer inklusive be
 
 Kræver ogr2ogr version 1.9.1 bygget med spatialite
 
-#INSTALLATION :
+#Installation :
 
 1:   Installér modulet
 
