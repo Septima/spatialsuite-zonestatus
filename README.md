@@ -77,11 +77,8 @@ Eksempel:
 
 ```python
 komnr=183
-
 dataprod='April' # dato for oprettelse af landzonepolygon
-
 kommunenavn='Ishøj'
-
 zonestatus='Beregnet landzone' # Teksten i feltet zonestatus
 ```
 
