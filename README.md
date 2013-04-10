@@ -4,7 +4,7 @@ Spatialsuite-zonestatus
 
 # Licens
 
-Dette modul er finansieret af Ishøj Kommune og er kan anvendes kvit og frit af uden betingelser
+Dette modul er finansieret af Ishøj Kommune og er kan anvendes kvit og frit af alle uden betingelser
 
 
 #Beskrivelse:
@@ -24,6 +24,10 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
 
 
 https://github.com/Septima/spatialsuite-zonestatus/archive/master.zip
+
+Kopiér indholder til en folder med navnet "zonestatus"
+
+Note: Seneste version af modulet kan altid hentes med ovenstående link
 
 
 1.b: Kopier modulet "zonestatus" til sitets Septima moduler, dvs. til "[cbinfo.config.dir]/modules/septima/zonestatus"
