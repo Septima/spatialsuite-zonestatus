@@ -20,9 +20,15 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
 
 1:   Installér modulet
 
-1.a: Kopier modulet "zonestatus" til sitets Septima moduler, dvs. til "[cbinfo.config.dir]/modules/septima/zonestatus"
+1.a: Hent seneste version af modulet her:
 
-1.b: Skriv følgende entry i [cbinfo.modules]:
+
+https://github.com/Septima/spatialsuite-zonestatus/archive/master.zip
+
+
+1.b: Kopier modulet "zonestatus" til sitets Septima moduler, dvs. til "[cbinfo.config.dir]/modules/septima/zonestatus"
+
+1.c: Skriv følgende entry i [cbinfo.modules]:
 '''xml
 <module name="zonestatus" dir="septima/zonestatus"/>
 '''
@@ -71,4 +77,4 @@ dataprod='April' # dato for oprettelse af landzonepolygon
 
 kommunenavn='Ishøj'
 
-zonestatus='Beregnet landzone' # Teksten i zonestatus
+zonestatus='Beregnet landzone' # Teksten i feltet zonestatus
