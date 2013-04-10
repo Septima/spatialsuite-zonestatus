@@ -24,7 +24,7 @@ Kræver ogr2ogr version 1.9.1 bygget med spatialite
 
 2: Tilføj tema
 2.a: I profilen indsættes:
-
+'''xml
     <theme module="zonestatus" name="theme-zonekort-landzone">
         <themeselector>
             <initialstate>available</initialstate>
