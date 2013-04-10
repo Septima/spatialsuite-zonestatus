@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<theme>
+
+    <cbinfo-metadata>
+        <param name="metadata.text"><![CDATA[Zonekort. Med beregnet landzone]]></param>
+        <param name="copyright-text">&#169; Septima</param>
+        <param name="copyright.url">http://www.septima.dk</param>
+    </cbinfo-metadata>
+
+    <clientlayers>
+        <clientlayer>
+            <singletile>true</singletile>
+        </clientlayer>
+    </clientlayers>
+
+
+
+    <layer datasource="ds_zonestatus_landzone" downloadable="false"
+           name="Zonestatus_landzone" type="polygon"> [datasource:ds_zonestatus_landzone.mapfile-datasource]
+        <minscale>250</minscale>
+        <transparency>60</transparency>
+        <class>
+            <name>Byzone</name>
+            <expression>( '[zonestatus]' = 'Byzone')</expression>
+            <style>
+                <color>255 0 0</color>
+                <outlinecolor>255 0 0</outlinecolor>
+                <size>5</size>
+                <symbol>skravering</symbol>
+            </style>
+
+        </class>
+        <class>
+            <name>Landzone (beregnet)</name>
+            <expression>( '[zonestatus]' = 'Beregnet landzone')</expression>
+            <style>
+                <color>0 205 0</color>
+                <outlinecolor>0 0   0</outlinecolor>
+                <size>5</size>
+                <symbol>lodret_skravering</symbol>
+            </style>
+        </class>
+        <class>
+            <name>Landzone</name>
+            <expression>( '[zonestatus]' = 'Landzone')</expression>
+            <style>
+
+                <outlinecolor>0 0  0</outlinecolor>
+                <size>5</size>
+                <symbol>circle</symbol>
+            </style>
+        </class>
+
+        <class>
+            <name>Sommerhusområde</name>
+            <expression>( '[zonestatus]' = 'Sommerhusområde')</expression>
+            <style>
+                <color>255 205 0</color>
+                <outlinecolor>255 205 0</outlinecolor>
+                <size>5</size>
+                <symbol>skravering</symbol>
+            </style>
+        </class>
+
+    </layer>
+</theme>

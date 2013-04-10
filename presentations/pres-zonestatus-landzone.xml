@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<presentation xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    <text name="overskrift" value="Zonekort" plural="Zonekort"/>
+    <columns>
+        <column format="heading">
+            <label>"Zonekort: " + tostring(planid)</label>
+            <value>"Zonekort: " + tostring(planid)</value>
+        </column>
+        <column name="1">
+            <condition>isDefined(planid)</condition>
+            <label>'PlanID: '</label>
+            <value>tostring(planid)</value>
+        </column>
+        <column name="2">
+            <condition>isDefined(komnr)</condition>
+            <label>'Kommunenummer'</label>
+            <value>tostring(komnr)</value>
+        </column>
+        <column name="3">
+            <condition>isDefined(kommunenavn)</condition>
+            <label>'Kommunenavn'</label>
+            <value>tostring(kommunenavn)</value>
+        </column>
+        <column name="3">
+            <condition>isDefined(glkomnr)</condition>
+            <label>'Gl. kommunenummer'</label>
+            <value>tostring(glkomnr)</value>
+        </column>
+        <column name="3">
+            <condition>isDefined(glkomnavn)</condition>
+            <label>'Gl. kommunenavn'</label>
+            <value>tostring(glkomnavn)</value>
+        </column>
+        <column name="4">
+            <condition>isDefined(objektkode)</condition>
+            <label>'Objektkode: '</label>
+            <value>tostring(objektkode)</value>
+        </column>
+        <column name="5">
+            <condition>isDefined(zonestatus)</condition>
+            <label>'Zonestatus'</label>
+            <value>tostring(zonestatus)</value>
+        </column>
+        <column name="6">
+            <condition>isDefined(datooprt)</condition>
+            <label>'Oprettelsesdato'</label>
+            <value>tostring(datooprt)</value>
+        </column>
+        <column name="7">
+            <condition>isDefined(datoopdt)</condition>
+            <label>'Seneste opdateringsdato'</label>
+            <value>tostring(datoopdt)</value>
+        </column>
+        <column name="8">
+            <condition>isDefined(dataprod)</condition>
+            <label>'Produktionsdato'</label>
+            <value>dataprod</value>
+        </column>
+        <column name="9">
+            <condition>isDefined(digigrundd)</condition>
+            <label>'Digitaliseringsdato'</label>
+            <value>tostring(digigrundd)</value>
+        </column>
+        <column name="10">
+            <condition>isDefined(datogeom)</condition>
+            <label>'Dato for registrering af geometri'</label>
+            <value>tostring(datogeom)</value>
+        </column>
+        <column name="11">
+            <condition>isDefined(digigrundl)</condition>
+            <label>'Digitaliseringsgrundlag'</label>
+            <value>digigrundl</value>
+        </column>
+        <!-- Vis i kort-->
+        <column format="org-pcolid">
+            <label> if IsDefined(shape_wkt) then GeometryType(shape_wkt) else "GEOMETRY UNDEFINED" endif </label>
+            <value>pcolid</value>
+        </column>
+    </columns>
+</presentation>

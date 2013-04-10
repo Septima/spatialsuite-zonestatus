@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spatialqueries>
+
+    <targetset name="zonestatus">
+        <target displayname="Zonekort (beregnet landzone)"
+                presentation="[module:zonestatus.dir]/presentations/pres-zonestatus-landzone"
+                themecondition="theme-zonekort-landzone">
+            <datasource name="ds_zonestatus_landzone"/>
+        </target>
+        <target displayname="Kommuneplan"
+                presentation="custom/demo01/pres-kommuneplan"
+                maxresult="50"
+                themecondition="theme-kommuneplan"
+                srs="25832">
+            <datasource name="ds_kommuneplan"/>
+        </target>
+    </targetset>
+</spatialqueries>
