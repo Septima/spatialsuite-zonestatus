@@ -22,7 +22,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #Beskrivelse:
 
 
-Plansystem udstiller ikke data om landzoner medmindre en zone specifikt er udlagt til landzone. Det antages i modulet at alle arealer, der ikke er registreret med en zoneplan i Plansystem, er landzoner.
+Plansystem udstiller ikke data om landzoner medmindre en zone specifikt er udlagt til landzone. Det antages i modulet at alle arealer, der ikke er registreret med en zoneplan i Plansystem er landzoner.
 
 Dette modul til SpatialSuite beregner det ikke-zonelagte areal og angiver det som landszone zone.
 
@@ -30,7 +30,7 @@ Først hentes kommunegrænsen fra plansystem. Samtidig hentes alle eksisterende 
 
 Endelig fratrækkes(difference) de sammelagte zonerarealer fra kommunensgrænsen (polygon).
 
-Note: Der er registreret præcisionsforskelle mellem geometrierne fra zonearealer og kommunegrænsen, hvilket medfører en randzoneproblematik ved "klipningen". Polygonen for den beregnede landszone er defor beregnet ved at påføre en negativ buffer på 0,05 meter på kommunepolygonen. Derfor har den beregnede landszone en marginal usikkerhed i kanterne som grænser op til kommunegrænsen på 0,05 meter
+Note: Der er registreret præcisionsforskelle mellem geometrierne fra zonearealer og kommunegrænsen, hvilket medfører en randzoneproblematik ved "klipningen" og der opstår derfor et antal meget små polygoner som efterfølgende fjernes. Størrelsen på de arealer, der skal fjernes styres med variablen areal_filter. Default er 10 m2
 
 Modulet konstruerer således en ESRI Shapefile med alle zonearealer inklusive beregnede landzonearealer. Andre formater kan meget enkelt understøttes herunder spatialle databaser
 
