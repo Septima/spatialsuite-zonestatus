@@ -100,7 +100,7 @@ Eksempel:
 
 ```python
 komnr=183
-areal_filter=10 # alle arealer mindre end 10m2 fjernes fra datasættet
+areal_filter=10 # alle arealer mindre end eller lig med 10m2 fjernes fra datasættet
 dataprod='April' # dato for oprettelse af landzonepolygon
 kommunenavn='Ishøj'
 zonestatus='Beregnet landzone' # Teksten i feltet zonestatus
