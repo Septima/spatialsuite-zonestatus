@@ -86,7 +86,7 @@ Eksempel:
      <targetset name="std_soegning" maxresult="500" >
         <include src="[module:zonestatus.dir]/queries/targetset.xml" nodes="/spatialqueries/targetset/*" mustexist="false"/>
         <target displayname="Skoler"
-            presentation="[module:kbh.dir]/presentations/pres-buf-skoler"
+            presentation="[module:skoler.dir]/presentations/pres-skoler"
             maxresult="50" srs="25832">
             <datasource name="ds_skoler" />
         </target>
@@ -100,6 +100,7 @@ Eksempel:
 
 ```python
 komnr=183
+areal_filter=10 # alle arealer mindre end 10m2 fjernes fra datasættet
 dataprod='April' # dato for oprettelse af landzonepolygon
 kommunenavn='Ishøj'
 zonestatus='Beregnet landzone' # Teksten i feltet zonestatus
