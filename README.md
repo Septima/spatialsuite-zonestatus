@@ -57,7 +57,7 @@ Note: Seneste version af modulet kan altid hentes med ovenstående link
 
 1.c: Skriv følgende entry i [cbinfo.modules]:
 ```xml
-<module name="zonestatus" dir="septima/zonestatus"/>
+<module name="zonestatus" dir="septima/zonestatus" permissionlevel="public"/>
 ```
 2: Tilføj tema
 
