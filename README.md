@@ -103,7 +103,7 @@ komnr=183
 areal_filter=10 # alle arealer mindre end eller lig med 10m2 fjernes fra datasættet
 dataprod='April' # dato for oprettelse af landzonepolygon
 kommunenavn='Ishøj'
-zonestatus='Beregnet landzone' # Teksten i feltet zonestatus
+zonestatus='Beregnet landzone' # Teksten i feltet zonestatus. Må ikk eændres dat tema filen filtrerer op denne værdi
 ```
 4.b: Åben en kommandolinjeprompt i modulets datafolder og kør scriptet createdata_sqlite.bat. Modulet har herefter en ESRI SHapefil med alle zonearealer inklusive beregnede landzonearealer.
 
