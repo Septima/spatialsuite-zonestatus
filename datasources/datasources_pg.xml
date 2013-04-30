@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<datasources>
+
+
+    <endpoint name="ep_zonestatus" endpointtype="shapefile" displayname="Zonestatus - beregnet landzone">
+        <dir>[module:zonestatus.dir]/data</dir>
+    </endpoint>
+
+    <datasource name="ds_zonestatus_landzone" endpoint="ep_zonestatus">
+        <shapefile>zoner_septima</shapefile>
+    </datasource>
+    <datasource endpoint="ep_k183" name="ds_zonestatus_landzone_pg">
+        <table geometrycolumn="wkb_geometry"
+            name="cbkort.zoner_septima" pkcolumn="ogc_fid"/>
+    </datasource>
+</datasources>
