@@ -15,8 +15,8 @@
 
 
 
-    <layer datasource="ds_zonestatus_landzone" downloadable="false"
-           name="Zonestatus_landzone" type="polygon"> [datasource:ds_zonestatus_landzone.mapfile-datasource]
+    <layer datasource="ds_zonestatus_landzone_pg" downloadable="false"
+           name="Zonestatus_landzone" type="polygon"> [datasource:ds_zonestatus_landzone_pg.mapfile-datasource]
         <minscale>250</minscale>
         <transparency>60</transparency>
         <class>
@@ -46,7 +46,7 @@
             <style>
 
                 <outlinecolor>0 0  0</outlinecolor>
-                <size>5</size>
+                <size>2</size>
                 <symbol>circle</symbol>
             </style>
         </class>
