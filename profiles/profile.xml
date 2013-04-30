@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<themes>
+    <theme module="zonestatus" name="theme-zonekort-landzone">
+        <themeselector>
+            <initialstate>hidden</initialstate>
+            <group>planlaegning-kort</group>
+            <displayname>Zonekort (beregnet landzone)</displayname>
+            <selectable>true</selectable>
+        </themeselector>
+    </theme>
+</themes>
