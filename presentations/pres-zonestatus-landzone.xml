@@ -16,10 +16,10 @@
             <label>'Kommunenummer'</label>
             <value>tostring(komnr)</value>
         </column>
-        <column name="3">
-            <condition>isDefined(kommunenavn)</condition>
+        <column name="99">
+            <condition>isDefined(komnavn)</condition>
             <label>'Kommunenavn'</label>
-            <value>tostring(kommunenavn)</value>
+            <value>tostring(komnavn)</value>
         </column>
         <column name="3">
             <condition>isDefined(glkomnr)</condition>
