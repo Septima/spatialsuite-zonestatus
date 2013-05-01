@@ -21,7 +21,7 @@ echo "Creating shapefile zoner_septima.shp and removing polygons with area less 
 %gdalpath%ogr2ogr  -overwrite  -f "ESRI Shapefile" zoner_septima.shp zoner_temp.shp -sql "select * FROM zoner_temp WHERE OGR_GEOM_AREA > %area_filter%"
 echo "write to postgres database"
 set PGCLIENTENCODING=utf8
-%gdalpath%ogr2ogr  -overwrite -f "PostgreSQL" pg:"host=localhost dbname=k183test user=k183 password=k183 port=5432" -sql "select * FROM zoner_temp WHERE OGR_GEOM_AREA > %area_filter%" zoner_temp.shp -nln cbkort.zoner_septima
+%gdalpath%ogr2ogr  -overwrite -f "PostgreSQL" pg:"host=localhost dbname=k183test user=user password=password port=5432" -sql "select * FROM zoner_temp WHERE OGR_GEOM_AREA > %area_filter%" zoner_temp.shp -nln cbkort.zoner_septima
 
 
 
